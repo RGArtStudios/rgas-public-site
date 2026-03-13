@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(cd /x/projects/rg-studio && php artisan test 2>&1)",
+      "Bash(gh auth:*)"
+    ]
+  }
+}
