@@ -51,7 +51,7 @@ const FALLBACK_EVENTS: EventItem[] = [
     location: "Main Gallery",
     price: null,
     is_free: true,
-    image: "https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&q=80",
   },
   {
     id: 2,
@@ -105,7 +105,7 @@ const FALLBACK_EVENTS: EventItem[] = [
     location: "Printmaking Lab",
     price: 20,
     is_free: false,
-    image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
   },
 ];
 
@@ -121,7 +121,7 @@ const PAST_EVENTS: EventItem[] = [
     location: "Main Gallery",
     price: null,
     is_free: true,
-    image: "https://images.unsplash.com/photo-1541961017-22d85feaf6a1?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&q=80",
   },
   {
     id: 11,
@@ -145,7 +145,7 @@ const PAST_EVENTS: EventItem[] = [
     location: "Studio A",
     price: null,
     is_free: true,
-    image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1481072881274-e5b88f71e7ca?w=600&q=80",
   },
 ];
 
@@ -188,10 +188,13 @@ export default async function EventsPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative flex items-end overflow-hidden" style={{ minHeight: "50vh" }}>
+      <section
+        className="relative flex items-end overflow-hidden"
+        style={{ minHeight: "50vh", backgroundColor: "var(--color-dark)" }}
+      >
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=1600&q=80"
+            src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1600&q=80"
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"
@@ -200,7 +203,7 @@ export default async function EventsPage() {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(to top, rgba(26,26,46,0.88) 0%, rgba(26,26,46,0.5) 60%, rgba(26,26,46,0.2) 100%)",
+                "linear-gradient(to top, rgba(26,26,46,0.90) 0%, rgba(26,26,46,0.55) 55%, rgba(26,26,46,0.25) 100%)",
             }}
           />
         </div>
@@ -285,7 +288,10 @@ export default async function EventsPage() {
                   }}
                 >
                   {/* Image */}
-                  <div className="md:w-64 lg:w-80 flex-shrink-0 overflow-hidden" style={{ minHeight: "200px" }}>
+                  <div
+                    className="md:w-64 lg:w-80 flex-shrink-0 overflow-hidden"
+                    style={{ minHeight: "200px", backgroundColor: "var(--color-surface-alt)" }}
+                  >
                     <img
                       src={event.image}
                       alt={event.title}
@@ -413,7 +419,10 @@ export default async function EventsPage() {
                     opacity: 0.8,
                   }}
                 >
-                  <div className="aspect-[16/9] overflow-hidden">
+                  <div
+                    className="aspect-[16/9] overflow-hidden"
+                    style={{ backgroundColor: "var(--color-surface-alt)" }}
+                  >
                     <img
                       src={event.image}
                       alt={event.title}

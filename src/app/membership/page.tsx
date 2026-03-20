@@ -115,7 +115,7 @@ export default function MembershipPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative flex items-end overflow-hidden" style={{ minHeight: "50vh" }}>
+      <section className="relative flex items-end overflow-hidden" style={{ minHeight: "50vh", backgroundColor: "var(--color-dark)" }}>
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1481072881274-e5b88f71e7ca?w=1600&q=80"

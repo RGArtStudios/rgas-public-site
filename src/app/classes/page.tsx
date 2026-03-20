@@ -226,7 +226,7 @@ export default async function ClassesPage({
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative flex items-end overflow-hidden" style={{ minHeight: "52vh" }}>
+      <section className="relative flex items-end overflow-hidden" style={{ minHeight: "52vh", backgroundColor: "var(--color-dark)" }}>
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1600&q=80"
